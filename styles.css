@@ -1,50 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
 	font-family: "Inter", sans-serif;
-	font-optical-sizing: auto;
-	font-style: normal;
+	background-color: #ffffff;
 	color: #030616;
-}
-
-.faq-header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.faq-header h1 {
-	font-size: 36px;
-	font-weight: 600;
-}
-
-.faq-header p {
-	font-size: 16px;
-	font-weight: 400;	
-}
-
-.faq-container {
-	background-color: #F8FAFC;
-    display: grid;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-
+	line-height: 1.6;
 }
 
 a {
 	text-decoration: none;
-	color: #4E80EE;
+	color: #4e80ee;
 }
 
-.author-info {
-	font-size: 14px;
+a:hover {
+	text-decoration: underline;
+}
+
+.main {
+	background-color: #f8fafc;
+
+}
+
+.faq-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+}
+
+.faq-header {
 	text-align: center;
-	margin-top: 16px;
-	color: rgb(55, 65, 81);
+	margin-bottom: 3rem;
+	margin-top: 3rem;
 }
 
-.author-info a {
-	text-decoration: none;
+.faq-header h1 {
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.faq-header p {
+	font-size: 1rem;
+	font-weight: 400;
+	color: #4b5563;
+}
+
+.faq-item {
+	margin-bottom: 2rem;
+}
+
+.faq-item h2 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+	margin-bottom: 0.75rem;
+}
+
+.faq-item ol,
+.faq-item ul {
+	padding-left: 1.25rem;
+	margin-bottom: 0.75rem;
+}
+
+.faq-item li {
+	margin-bottom: 0.5rem;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #d2d5da;
+	margin: 2rem 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+	.faq-header h1 {
+		font-size: 1.75rem;
+	}
+
+	.faq-header p {
+		font-size: 0.95rem;
+	}
+
+	.faq-item h2 {
+		font-size: 1.1rem;
+	}
 }
